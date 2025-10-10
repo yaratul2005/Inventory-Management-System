@@ -213,6 +213,7 @@ docker-compose down
 
 ## 📁 Project Structure
 
+````
 inventory-management-system/
 ├── 🖥️ Frontend (Next.js)/
 │   └── app/
@@ -255,7 +256,7 @@ inventory-management-system/
 └── 📚 Documentation/
     ├── README.md                # Main documentation
     └── SETUP_INSTRUCTIONS.md    # Local setup & usage guide
-
+````
 ---
 
 ## 🔌 API Documentation
