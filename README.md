@@ -477,7 +477,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 If you encounter any issues or have questions:
 
-- 📧 **Email**: support@example.com
+- 📧 **Email**: ratul41g@gmail.com
 - 🐛 **Issues**: [GitHub Issues](https://github.com/yaratul/inventory-management-system/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/yaratul/inventory-management-system/discussions)
 
