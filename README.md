@@ -213,54 +213,48 @@ docker-compose down
 
 ## 📁 Project Structure
 
-\`\`\`
 inventory-management-system/
+├── 🖥️ Frontend (Next.js)/
+│   └── app/
+│       ├── dashboard/           # Main dashboard
+│       ├── products/            # Product management
+│       ├── categories/          # Category management
+│       ├── suppliers/           # Supplier management
+│       ├── transactions/        # Transaction logs
+│       ├── users/               # User management
+│       ├── login/               # Authentication (login)
+│       ├── register/            # Authentication (register)
+│       ├── components/          # Reusable components
+│       ├── ui/                  # shadcn/ui components
+│       ├── dashboard-layout.tsx # Dashboard layout
+│       ├── protected-route.tsx  # Auth-protected routing
+│       └── lib/
+│           ├── api.ts           # API client (Axios config)
+│           ├── auth-context.tsx # Auth provider context
+│           └── utils.ts         # Utility functions
 │
-├── 🎨 Frontend (Next.js)
-│   ├── app/
-│   │   ├── dashboard/          # Main dashboard
-│   │   ├── products/           # Product management
-│   │   ├── categories/         # Category management
-│   │   ├── suppliers/          # Supplier management
-│   │   ├── transactions/       # Transaction logs
-│   │   ├── users/             # User management
-│   │   ├── login/             # Authentication
-│   │   └── register/          # User registration
-│   │
-│   ├── components/
-│   │   ├── ui/                # shadcn/ui components
-│   │   ├── dashboard-layout.tsx
-│   │   ├── protected-route.tsx
-│   │   └── ...
-│   │
-│   └── lib/
-│       ├── api.ts             # API client
-│       ├── auth-context.tsx   # Auth provider
-│       └── utils.ts
+├── ⚙️ Backend (Flask)/
+│   ├── app.py                   # Flask entry point
+│   ├── application/             # Core backend package
+│   │   ├── models.py            # Database models
+│   │   ├── routes/              # Route definitions
+│   │   │   ├── auth.py          # Authentication routes
+│   │   │   ├── products.py      # Product endpoints
+│   │   │   ├── categories.py    # Category endpoints
+│   │   │   ├── suppliers.py     # Supplier endpoints
+│   │   │   ├── transactions.py  # Transaction endpoints
+│   │   │   └── users.py         # User endpoints
+│   │   └── seed_data.py         # Database seeding script
+│   ├── requirements.txt         # Python dependencies
 │
-├── ⚙️ Backend (Flask)
-│   ├── app.py                 # Flask application
-│   ├── models.py              # Database models
-│   ├── routes/
-│   │   ├── auth.py           # Authentication
-│   │   ├── products.py       # Product endpoints
-│   │   ├── categories.py     # Category endpoints
-│   │   ├── suppliers.py      # Supplier endpoints
-│   │   ├── transactions.py   # Transaction endpoints
-│   │   └── users.py          # User endpoints
-│   │
-│   ├── seed_data.py          # Database seeding
-│   └── requirements.txt
+├── 🐳 Docker/
+│   ├── Dockerfile.frontend      # Next.js build configuration
+│   ├── Dockerfile.backend       # Flask build configuration
+│   └── docker-compose.yml       # Multi-service setup
 │
-├── 🐳 Docker
-│   ├── Dockerfile.frontend
-│   ├── Dockerfile.backend
-│   └── docker-compose.yml
-│
-└── 📚 Documentation
-    ├── README.md
-    └── SETUP_INSTRUCTIONS.md
-\`\`\`
+└── 📚 Documentation/
+    ├── README.md                # Main documentation
+    └── SETUP_INSTRUCTIONS.md    # Local setup & usage guide
 
 ---
 
